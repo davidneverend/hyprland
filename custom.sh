@@ -32,4 +32,5 @@ cd
 git clone https://github.com/davidneverend/hyprland.git
 cp -f hyprland/config/hypr/hyprland.conf /home/david/.config/hypr/hyprland.conf 
 cp -f hyprland/config/kitty/kitty.conf /home/david/.config/kitty/kitty.conf
+cp -f hyprland/.bashrc /home/david/.bashrc
 
