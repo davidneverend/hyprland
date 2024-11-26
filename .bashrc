@@ -11,5 +11,6 @@ PS1='[\u@\h \W]\$ '
 
 alias cls='clear'
 alias ll='ls -la --color=auto'
+alias sshmini='ssh david@192.168.1.250'
 
 
