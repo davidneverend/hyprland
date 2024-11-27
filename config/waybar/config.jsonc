@@ -10,7 +10,7 @@
     //"modules-left": ["clock","hyprland/window"],
     "modules-center": ["clock","custom/weather"],
     //"modules-right": ["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","network","tray"],
-    "modules-right": ["pulseaudio","pulseaudio#microphone","network","battery"],
+    "modules-right": ["cpu", "memory", "pulseaudio","pulseaudio#microphone","network","battery"],
     "hyprland/window": {
         "format": "{}"
     },
@@ -42,8 +42,19 @@
     //    "signal": 8
     //},
 
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "{used:0.1f}G/{total:0.1f}G ",
+        "tooltip":false
+    },
+
     "custom/weather" : {
-        //shows the current weather and forecast
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
