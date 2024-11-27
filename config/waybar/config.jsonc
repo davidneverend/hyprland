@@ -8,8 +8,9 @@
     "height": 70,
     "modules-left": [],
     //"modules-left": ["clock","hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray"],
+    "modules-center": ["clock","custom/weather"],
+    //"modules-right": ["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","network","tray"],
+    "modules-right": ["pulseaudio","pulseaudio#microphone","network","battery"],
     "hyprland/window": {
         "format": "{}"
     },
@@ -41,14 +42,14 @@
     //    "signal": 8
     //},
 
-    //"custom/weather" : {
+    "custom/weather" : {
         //shows the current weather and forecast
-        // "tooltip" : true,
-        //"format" : "{}",
-        //"interval" : 30,
-        //"exec" : "~/.config/waybar/scripts/waybar-wttr.py",
-        //"return-type" : "json"
-    //},
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/scripts/waybar-weather.py",
+        "return-type" : "json"
+    },
 
     "tray": {
         "icon-size": 20,
@@ -58,8 +59,10 @@
     "clock": {
         //"format": "{: %i:%m %p   %a, %b %e}",
         //"format": " {:%H:%M  %a, %b %e}",
-        "format": " {:%a, %b %e   %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        //"format": " {:%a, %b %e   %H:%M}",
+        "format": " {:%d/%m/%Y  %H:%M}",
+        //"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip":false
     },
 
     "backlight": {
