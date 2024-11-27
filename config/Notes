@@ -1,1 +1,5 @@
 Terminal = foot
+
+killall -SIGUSR2 waybar
+
+killall waybar
