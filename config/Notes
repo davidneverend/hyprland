@@ -1,7 +1,30 @@
-https://wiki.hyprland.org/Nvidia/
+
 
 Terminal = foot
 
 killall -SIGUSR2 waybar
 
 killall waybar
+
+
+**************
+*** Nvidia ***
+**************
+https://wiki.hyprland.org/Nvidia/
+
+Install the nvidia-driver-$version package from the default Ubuntu repositories. It will install the nvidia driver, the nvidia-persistenced binary, and start the nvidia-persistenced.service via systemd.
+
+Run:
+
+systemctl edit nvidia-persistenced.service
+
+This creates an override file that changes the behavior of the default /lib/systemd/system/nvidia-persistenced.service file. This will open the default editor, likely nano, with nothing in it. Paste the following content:
+
+[Service]
+ExecStart=
+ExecStart=/usr/bin/nvidia-persistenced --user nvidia-persistenced --persistence-mode --verbose
+
+Save the file and it will automatically be created as /etc/systemd/system/nvidia-persistenced.service.d/override.conf. Lastly, restart the daemon:
+
+systemctl restart nvidia-persistenced.service
+
