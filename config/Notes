@@ -1,3 +1,5 @@
+https://wiki.hyprland.org/Nvidia/
+
 Terminal = foot
 
 killall -SIGUSR2 waybar
