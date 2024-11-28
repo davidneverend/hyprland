@@ -84,7 +84,8 @@
 	"nospacing": 1,
     },
     "wireplumber": {
-        "format": "{icon}",
+        //"format": "{icon}",
+	"format": "{icon} {volume}%",
         "format-bluetooth": "󰂰",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
