@@ -28,7 +28,7 @@ sleep 2
 
 clear
 echo "Installing apps"
-sudo pacman -S nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji gnu-free-fonts texlive-fontsextra gnome-text-editor
+sudo pacman -S nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji otf-font-awesome texlive-fontsextra gnome-text-editor
 sleep 2
 
 clear 
