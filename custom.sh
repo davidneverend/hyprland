@@ -31,6 +31,10 @@ echo "Remove apps"
 sudo pacman -R dolphin vim
 sleep 2
 
+clear
+echo "Install wlogout"
+yay -S wlogout
+sleep 2
 
 #clear
 #cd
