@@ -13,11 +13,6 @@ sudo pacman -S archlinux-keyring
 sleep 2
 
 clear
-echo "Installing git"
-sudo pacman -S git
-sleep 2
-
-clear
 echo "Installing Yay..."
 echo
 cd
