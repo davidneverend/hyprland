@@ -1,11 +1,6 @@
 #!/bin/bash
 
 clear
-echo "Applying dark mode"
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-sleep 2
-
-clear
 echo "Refreshing keyrings..."
 echo
 sudo pacman -Syu
@@ -23,7 +18,12 @@ sleep 2
 
 clear
 echo "Installing apps"
-sudo pacman -S python-gobject nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji otf-font-awesome texlive-fontsextra code
+sudo pacman -S python-gobject nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji otf-font-awesome texlive-fontsextra code xdg-desktop-portal-gnome xdg-desktop-portal
+sleep 2
+
+clear
+echo "Applying dark mode"
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 sleep 2
 
 clear 
