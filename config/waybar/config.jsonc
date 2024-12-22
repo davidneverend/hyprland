@@ -38,7 +38,8 @@
       },
       "player-icons": {
         "default": ""
-      }
+      },
+      "tooltip": false
     },
     "hyprland/workspaces": {
       "on-click": "activate",
@@ -84,7 +85,8 @@
       "interval": 1
     },
     "memory": {
-      "format": "  {used:0.1f}Gi"
+      "format": "  {used:0.1f}Gi",
+      "tooltip": false
     },
     "pulseaudio": {
       "format": "{icon} {volume}%",
