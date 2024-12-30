@@ -8,17 +8,17 @@ sudo pacman -S archlinux-keyring
 sleep 2
 
 clear
+echo "Installing apps"
+sudo pacman -S python-gobject nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji otf-font-awesome texlive-fontsextra code xdg-desktop-portal-gnome xdg-desktop-portal
+sleep 2
+
+clear
 echo "Installing Yay..."
 echo
 cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-sleep 2
-
-clear
-echo "Installing apps"
-sudo pacman -S python-gobject nautilus firefox thunderbird gvfs-smb git libreoffice-fresh spotify-launcher waybar python-requests ttf-font-awesome noto-fonts-emoji otf-font-awesome texlive-fontsextra code xdg-desktop-portal-gnome xdg-desktop-portal
 sleep 2
 
 clear
