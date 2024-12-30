@@ -14,7 +14,6 @@ sleep 2
 
 clear
 echo "Installing Yay..."
-echo
 cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
