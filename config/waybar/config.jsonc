@@ -66,10 +66,9 @@
       "format": "  {:%H:%M}"
     },
     "clock": {
-      "locale": "fr_FR.utf8",
       "timezone": "Europe/Paris",
-      "format": "  {:%A %d %B %Y}",
-      //"format-alt": "{:%A, %B %D %Y (%R)}  ",
+      "locale": "fr_FR.UTF-8",      
+      "format": "  {:L%A %d %B %Y}",
       "tooltip-format": "<tt><big>{calendar}</big></tt>",
       "calendar": {
                   "mode"          : "year",
