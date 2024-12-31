@@ -43,6 +43,7 @@ window#waybar {
   color: #f38ba8;
 }
 
+#network,
 #clock,
 #pulseaudio,
 #custom-logo,
@@ -52,6 +53,8 @@ window#waybar {
 #tray,
 #memory,
 #window,
+
+
 #mpris {
   min-height: 0;
   min-width: 0;
@@ -132,6 +135,11 @@ window#waybar.empty #window {
 
 #custom-power {
   color: #f38ba8;
+  font-size: 14px;
+}
+
+#network {
+  color: #3f41ca;
   font-size: 14px;
 }
 
