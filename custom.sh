@@ -31,8 +31,15 @@ sudo pacman -R dolphin vim
 sleep 2
 
 clear
-echo "Install wlogout"
-yay -S wlogout
+echo "Yay"
+yay -S wlogout brother-dcpl3550cdw brscan4
+sleep 2
+
+clear
+echo "Start CUPS"
+sudo systemctl enable cups.service
+sleep 5
+sudo systemctl start cups.service
 sleep 2
 
 #clear
