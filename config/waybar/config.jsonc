@@ -18,8 +18,14 @@
       "memory",
       "pulseaudio",
       "tray",
+      "network",
       "custom/power"
     ],
+    "network": {
+      "format-wifi": "<small> </small>",
+      "tooltip-format": "<small> </small>  <small>{signalStrength}</small>% <small>{ipaddr}</small> ",
+      "format-disconnected": "⚠ Disconnected"
+    },
     "custom/spotify": {
       "format": "  {}",
       "return-type": "json",
